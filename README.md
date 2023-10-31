@@ -1,7 +1,6 @@
 # Kubernetes RBAC
 
 ```
-minikube start --driver=docker --extra-config="apiserver.authorization-mode=Node,RBAC"
 1. Download openssl
 2. KIND
     - docker cp NAMA_CONTAINER:/etc/kubernetes/pki/ca.crt ca.crt
@@ -17,4 +16,8 @@ minikube start --driver=docker --extra-config="apiserver.authorization-mode=Node
 8. kubectl config set-credentials Developer --client-certificate=developer.crt --client-key=developer.key --embed-certs=true
 9. kubectl config set-context developer --cluster=kind-studi-devops --user=Developer
 10. kubectl config use-context developer
+```
+Minikube:
+```
+minikube start --driver=docker --extra-config="apiserver.authorization-mode=Node,RBAC"
 ```

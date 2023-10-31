@@ -14,7 +14,7 @@ minikube start --driver=docker --extra-config="apiserver.authorization-mode=Node
 6. export KUBECONFIG=~/.kube/kind-developer
 
 7. kubectl config set-cluster kind-studi-devops --server=https://192.168.49.2 --certificate-authority=ca.crt --embed-certs=true
-8. kubectl config set-credentials developer --client-certificate=developer.crt --client-key=developer.key --embed-certs=true
+8. kubectl config set-credentials Developer --client-certificate=developer.crt --client-key=developer.key --embed-certs=true
 9. kubectl config set-context developer --cluster=kind-studi-devops --user=Developer
 10. kubectl config use-context developer
 ```

@@ -19,6 +19,8 @@ metadata:
 type: kubernetes.io/service-account-token
 ```
 
+yeah, you can get kubeconfig from lens for simplis
+
 # Test List of Pods
 ```
 # Replace the placeholders with your actual values
